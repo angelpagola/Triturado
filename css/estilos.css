@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Philosopher&family=Satisfy&display=swap');
+@import url('menu.css');
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+body {
+    font-family: 'Philosopher', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Satisfy', cursive;
+}
+
+
+/*Estilos del header*/
+
+.header {
+    top: 0;
+    height: 75px;
+    padding-top: 10px;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid #fff;
+}
+
+.header .container {
+    /*Para que uno este al lado del otro*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-top: 0;
+    color: #FA5858;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    height: 50px;
+    width: 65px;
+    margin-top: 5px;
+}
+
+.icon-menu {
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #FA5858;
+    color: #fff;
+    text-align: center;
+    /*Para que este centrado de manera vertical*/
+    line-height: 40px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+
+/*general*/
+
+.container {
+    margin: auto;
+    width: 95%;
+}
+
+.container--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*Banner*/
+
+.group__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.group {
+    margin-bottom: 50px;
+}
+
+.group--banner {
+    width: 100vw;
+    height: 100vh;
+}
+
+.group--banner .banner__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 90%;
+    text-align: center;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.banner__content .banner__txt:nth-child(2) {
+    font-size: 1.2em;
+}
+
+
+/*about_us*/
+
+.group--about_us {
+    text-align: right;
+}
+
+.group--about_us .column__title,
+.group--about_us .link__more {
+    color: #FA5858;
+}
+
+.group--about_us .about_us__img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.group--about_us .link__more {
+    text-decoration: none;
+    font-size: 1.3em;
+    border-bottom: 2px solid #000;
+}
+
+
+/*Group--product*/
+
+.group--product {
+    text-align: center;
+}
+
+.group--product .column {
+    width: 100%;
+    border: 1px solid #000;
+    margin: 5px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 15px -5px #000;
+    margin-bottom: 10px;
+}
+
+.group--product .group__title {
+    margin: auto;
+    color: #FA5858;
+    margin-bottom: 20px;
+}
+
+.group--product .column_title {
+    margin: auto;
+    color: #000;
+}
+
+.group--product .product__img {
+    width: 100%;
+    border-radius: 2px;
+}
+
+.group--product .product__info {
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+/*statistics*/
+
+.group--statistics {
+    position: relative;
+    text-align: center;
+}
+
+.group--statistics .statistics__img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.group--statistics .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.group--statistics .column--25 {
+    width: 49%;
+    display: inline-block;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.group--statistics .column--25 span,
+.group--statistics .column--25 .group__title,
+.group--statistics .column--25 .column__txt {
+    margin: 3px;
+    font-size: 1.2em;
+    font-family: 'Philosopher', sans-serif;
+}
+
+
+/*group--service*/
+
+.group--service {
+    text-align: center;
+}
+
+.group--service .column {
+    width: 100%;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+.group--service .group__title {
+    margin: auto;
+    color: #FA5858;
+}
+
+.group--service .column_title {
+    margin: auto;
+    color: #000;
+    font-size: 1.5em;
+}
+
+.group--service .column [class*="icon-"] {
+    font-size: 2.5em;
+    color: #FA5858;
+}
+
+.group--service .product__info {
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+/*group--clients*/
+
+.group--clients {
+    position: relative;
+    text-align: center;
+}
+
+.group--clients .group--clients__img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.group--clients .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.group--clients .group__title {
+    color: #FA5858;
+    font-size: 2.4em;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    margin-left: 40%;
+}
+
+.group--clients .column {
+    background: #fff;
+    color: #000;
+    align-items: center;
+    margin-top: 80px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.group--clients .client__img {
+    width: 100px;
+    height: 100px;
+    margin-top: -60px;
+    margin-left: 70%;
+    border-radius: 50%;
+}
+
+
+/*Characteristics*/
+
+.characteristics {
+    text-align-last: left;
+}
+
+.characteristics .group__title {
+    margin: auto;
+    color: #FA5858;
+}
+
+.characteristics .column__title {
+    color: #000;
+}
+
+.characteristics .column__txt {
+    text-align-last: left;
+}
+
+.characteristics .column {
+    margin-bottom: 10px;
+}
+
+
+/*Footer*/
+
+.main-footer {
+    text-align: center;
+    margin: auto;
+    background: #000;
+    color: #fff;
+    font-size: 1.3em;
+    padding-bottom: 20px;
+}
+
+.main-footer .column {
+    text-align: center;
+    width: 100%;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+
+.social-icon [class*="icon-"] {
+    color: #FA5858;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.social-icon__link {
+    text-decoration: none;
+}
+
+.social-icon .icon-facebook:hover {
+    background: #0084ff;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.social-icon .icon-instagram:hover {
+    background: linear-gradient(#F58529, #FEDA77, #DD2A7B, #8134AF, #515BD4);
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.social-icon .icon-twitter:hover {
+    background: #55acee;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.social-icon .icon-mail:hover {
+    background: #bd081c;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.main-footer .link__volver {
+    font-size: 2em;
+    color: #fff;
+    margin: auto;
+}
+
+@media(min-width:480px) {
+    .group--about_us .about_us__img {
+        height: 350px;
+    }
+    .group--statistics .column--25 span,
+    .group--statistics .column--25 .group__title,
+    .group--statistics .column--25 .column__txt {
+        font-size: 1.5em;
+    }
+    .group--service .column--33 {
+        width: 45%;
+    }
+}
+
+@media(min-width:768px) {
+    .group--about_us .about_us__img {
+        height: 450px;
+    }
+    .group--product .column--33 {
+        width: 48%;
+    }
+    .group--statistics .column--25 {
+        width: 24%;
+    }
+    .group--statistics .column--25 span,
+    .group--statistics .column--25 .group__title,
+    .group--statistics .column--25 .column__txt {
+        font-size: 1.6em;
+    }
+    .group--clients .column--50 {
+        width: 48%;
+    }
+    .group--clients .group--clients__img {
+        height: 450px;
+    }
+    .characteristics .group__title {
+        margin-left: 35%;
+        margin-bottom: 20px;
+    }
+    .characteristics .column--50 {
+        width: 48%;
+    }
+    .characteristics .about_us__img {
+        height: 300px;
+    }
+    .social-icon {
+        width: 40%;
+    }
+}
+
+@media(min-width:1024px) {
+    .icon-menu {
+        display: none;
+    }
+    .logo {
+        font-size: 3em;
+    }
+    .group--about_us .container,
+    .group--product .container,
+    .group--service .container {
+        width: 90%;
+    }
+    .group--about_us .column--50 {
+        width: 48%;
+    }
+    .group--about_us .about_us__img {
+        height: 400px;
+    }
+    .group--product .column--33 {
+        width: 32%;
+    }
+    .group--statistics .column--25 span,
+    .group--statistics .column--25 .group__title,
+    .group--statistics .column--25 .column__txt {
+        font-size: 1.8em;
+    }
+    .group--service .column--33 {
+        width: 32%;
+    }
+    .group--clients .client__img {
+        margin-left: 80%;
+    }
+    .social-icon {
+        width: 25%;
+    }
+}
